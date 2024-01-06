@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace GerenciamentoDeContasComC_
 {
-    public class Cliente
+    public class PessoaFisica : Cliente
     {
-        public int Codigo{get; set;}
-        public String Nome {get;set;}
+        public String tip
     }
 }
