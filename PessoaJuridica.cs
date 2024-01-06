@@ -7,6 +7,7 @@ namespace GerenciamentoDeContasComC_
 {
     public class PessoaJuridica : Conta
     {
-        public string Cnpj;
+        public string Cnpj {get; private set;}
+
     }
 }
