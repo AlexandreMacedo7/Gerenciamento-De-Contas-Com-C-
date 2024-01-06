@@ -9,5 +9,11 @@ namespace GerenciamentoDeContasComC_
     {
         public string Cnpj {get; private set;}
 
+
+        public PessoaJuridica(int codigo, int numerodaConta, string titular, string cnpj, decimal saldo)
+        :base(codigo, numerodaConta, titular, saldo){
+            Cnpj = cnpj;
+        }
+        
     }
 }
