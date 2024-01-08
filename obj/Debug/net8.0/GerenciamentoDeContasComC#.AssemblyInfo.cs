@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciamentoDeContasComC#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe666a10df72bebb9c8086ffbbd282be8f914bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82c5046800c04853ec308f0410edd07475973925")]
 [assembly: System.Reflection.AssemblyProductAttribute("GerenciamentoDeContasComC#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GerenciamentoDeContasComC#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,11 +27,14 @@ namespace GerenciamentoDeContasComC_
         public decimal RealizarDeposito(decimal deposito){
             return Saldo = Saldo + (deposito - 1);
         }
-        public decimal RealizarSaque(decimal saque){
-            if(saque >= Saldo){
+        public void RealizarSaque(decimal saque){
+            if(saque < Saldo){
+                Saldo = Saldo - (saque + 1);
+            }
+            else{
                 Console.WriteLine($"Saldo insuficiente para saque no valor de: R$ {saque}");
             }
-            return Saldo = Saldo - (saque+1);
+            
         }
     }
 }
