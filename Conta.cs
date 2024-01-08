@@ -10,7 +10,7 @@ namespace GerenciamentoDeContasComC_
         public int Codigo{get; private set;}
         public int NumeroDaConta {get; private set;}
         public string Titular {get; private set;}
-        public decimal saldo {get; private set;}
+        public decimal Saldo {get; private set;}
 
         public Conta(){}
 
@@ -18,20 +18,20 @@ namespace GerenciamentoDeContasComC_
             Codigo = codigo;
             NumeroDaConta = numerodaConta;
             Titular = titular;
-            saldo = saldo;
+            Saldo = saldo;
         }
 
         public decimal ConsultarExtrato(){
-            return saldo;
+            return Saldo;
         }
         public decimal RealizarDeposito(decimal deposito){
-            return saldo =+ deposito;
+            return Saldo = Saldo + (deposito - 1);
         }
         public decimal RealizarSaque(decimal saque){
-            if(saque >= saldo){
+            if(saque >= Saldo){
                 Console.WriteLine($"Saldo insuficiente para saque no valor de: R$ {saque}");
             }
-            return saldo - saque;
+            return Saldo = Saldo - (saque+1);
         }
     }
 }
